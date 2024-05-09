@@ -1,0 +1,22 @@
+From 5be42f42635418e12e220a7689152f7d96d05941 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Matthias=20Mail=C3=A4nder?=
+ <Mailaender@users.noreply.github.com>
+Date: Thu, 9 May 2024 23:20:12 +0200
+Subject: [PATCH] Add developer name.
+
+---
+ source/misc/net.blockattack.game.metainfo.xml | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/source/misc/net.blockattack.game.metainfo.xml b/source/misc/net.blockattack.game.metainfo.xml
+index fba75c6..2581691 100644
+--- a/source/misc/net.blockattack.game.metainfo.xml
++++ b/source/misc/net.blockattack.game.metainfo.xml
+@@ -3,6 +3,7 @@
+ 	<id>net.blockattack.game</id>
+ 	<metadata_license>MIT</metadata_license>
+ 	<project_license>GPL-2.0+</project_license>
++	<developer_name>Poul Sander</developer_name>
+ 	<name>Block Attack - Rise of the Blocks</name>
+ 	<summary>A fast paced match-3/blockfall game</summary>
+ 	<description>
