@@ -1,6 +1,6 @@
 app-id: net.blockattack.game
 runtime: org.freedesktop.Platform
-runtime-version: 22.08
+runtime-version: 23.08
 sdk: org.freedesktop.Sdk
 command: blockattack
 rename-icon: blockattack
@@ -22,8 +22,8 @@ modules:
       - ./b2 -j${FLATPAK_BUILDER_N_JOBS} install variant=release cxxstd=11 --layout=system
     sources:
       - type: archive
-        url: https://boostorg.jfrog.io/artifactory/main/release/1.84.0/source/boost_1_84_0.tar.gz
-        sha256: a5800f405508f5df8114558ca9855d2640a2de8f0445f051fa1c7c3383045724
+        url: https://boostorg.jfrog.io/artifactory/main/release/1.85.0/source/boost_1_85_0.tar.gz
+        sha256: be0d91732d5b0cc6fbb275c7939974457e79b54d6f07ce2e3dfdd68bef883b0b
         x-checker-data:
           type: anitya
           project-id: 6845
@@ -34,15 +34,13 @@ modules:
     sources:
       - type: git
         url: https://github.com/blockattack/blockattack-game.git
-        tag: v2.8.0
-        commit: 055e7449e798c7a08acdfbfb31e845c14d4a7c69
+        tag: v2.9.0
+        commit: 08317c5b6a32263183602d799a046f0f6cc8c454
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
       - type: patch
-        path: 0001-Add-Open-Age-Rating.patch
-      - type: patch
-        path: 0002-Add-releases.patch
+        path: developer-name.patch
       - type: shell
         commands:
           - ./packdata.sh
