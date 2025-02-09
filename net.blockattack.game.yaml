@@ -34,8 +34,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/blockattack/blockattack-game.git
-        tag: v2.9.0
-        commit: 08317c5b6a32263183602d799a046f0f6cc8c454
+        tag: v2.9.1
+        commit: 0fba975828a1e00338f971a6dd67fb8b0f7ba21a
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
