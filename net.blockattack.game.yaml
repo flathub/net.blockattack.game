@@ -34,13 +34,11 @@ modules:
     sources:
       - type: git
         url: https://github.com/blockattack/blockattack-game.git
-        tag: v2.9.1
-        commit: 0fba975828a1e00338f971a6dd67fb8b0f7ba21a
+        tag: v2.10.0
+        commit: 4a115797ad81dc3495d5ff5ae54c1c61ff929b57
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
-      - type: patch
-        path: developer-name.patch
       - type: shell
         commands:
           - ./packdata.sh
